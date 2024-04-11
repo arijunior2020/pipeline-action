@@ -36,5 +36,6 @@ jobs:
             - name: Run docker container
               run: docker run -d -p 8080:8080 --name deploy_ghactions arimateiajunior/deploy_ghactions
             - name: Run container test
-              run: docker exec -it deploy_ghactions /bin/bash
+              run: docker exec -it -t deploy_ghactions /bin/bash
+
 
